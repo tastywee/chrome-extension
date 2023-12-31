@@ -15,7 +15,10 @@ function renderLeads() {
   let inputValue = inputEl.value;
   console.log(inputValue);
   for (let i = 0; i < myLeads.length; i++) {
-    listItems += "<li><a href='" + myLeads[i] + "' target='_blank'>" + myLeads[i] + "</a></li>";
+    listItems += `
+    <li>
+      <a href='${myLeads[i]}' target='_blank'> ${myLeads[i]}</a>
+    </li>`;
     console.log(listItems);
     //ALTERNATIVE CODE
     // const listItem = document.createElement("li");
